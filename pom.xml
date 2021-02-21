@@ -11,6 +11,7 @@
 
     <modules>
         <module>spring-cloud-order</module>
+        <module>spring-cloud-gateway</module>
     </modules>
     <!-- 统一管理jar包版本 -->
     <properties>
