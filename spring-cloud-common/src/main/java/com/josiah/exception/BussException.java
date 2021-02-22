@@ -10,8 +10,7 @@ import lombok.Setter;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 13:16
  */
-@Setter
-@Getter
+
 public class BussException extends RuntimeException{
     private Integer code;
     private String msg;
@@ -28,5 +27,21 @@ public class BussException extends RuntimeException{
 
     public BussException() {
 
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }

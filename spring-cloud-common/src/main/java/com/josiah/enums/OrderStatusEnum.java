@@ -8,7 +8,6 @@ import lombok.Getter;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 15:59
  */
-@Getter
 public enum OrderStatusEnum {
     /**
      * 未完成
@@ -26,5 +25,9 @@ public enum OrderStatusEnum {
 
     OrderStatusEnum(Integer value) {
         this.value = value;
+    }
+
+    public Integer getValue() {
+        return value;
     }
 }

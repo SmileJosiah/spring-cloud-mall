@@ -9,7 +9,7 @@ import lombok.Getter;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 13:19
  */
-@Getter
+
 public enum GoodsErrorEnum implements RspEnum {
     /**
      * 库存不足
@@ -32,5 +32,13 @@ public enum GoodsErrorEnum implements RspEnum {
     @Override
     public String getMsg() {
         return getMessage();
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }

@@ -7,7 +7,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.122.133
+        server-addr: localhost:8848
     gateway:
       routes:
        - id: mall-goods
@@ -18,4 +18,7 @@ spring:
          uri: lb://mall-order
          predicates:
            - Path=/mall-order/**
+  redis:
+    host: localhost
+    password: 12
 

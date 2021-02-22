@@ -8,7 +8,7 @@ import lombok.Getter;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 16:01
  */
-@Getter
+
 public enum PayStatusEnum {
     /**
      * 未支付
@@ -26,5 +26,9 @@ public enum PayStatusEnum {
 
     PayStatusEnum(Integer value) {
         this.value = value;
+    }
+
+    public Integer getValue() {
+        return value;
     }
 }

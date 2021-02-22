@@ -9,7 +9,7 @@ import lombok.Getter;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 11:27
  */
-@Getter
+
 public enum GlobalSystemEnum implements RspEnum{
     //成功
     SUCCESS(200,"操作成功"),
@@ -33,5 +33,13 @@ public enum GlobalSystemEnum implements RspEnum{
     @Override
     public String getMsg() {
         return getMessage();
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }

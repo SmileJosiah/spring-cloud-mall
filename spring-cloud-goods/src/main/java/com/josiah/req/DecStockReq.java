@@ -1,5 +1,5 @@
 package com.josiah.req;
-import lombok.Data;
+
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.NotNull;
@@ -10,10 +10,26 @@ import javax.validation.constraints.NotNull;
  * @author: zhuxy  zhuxy@pukkasoft.cn
  * @create: 2021-02-22 11:34
  */
-@Data
+
 public class DecStockReq {
     @NotNull(message = "skuId不能为空")
     private String skuId;
     @Range
     private Integer count;
+
+    public String getSkuId() {
+        return skuId;
+    }
+
+    public void setSkuId(String skuId) {
+        this.skuId = skuId;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
 }
