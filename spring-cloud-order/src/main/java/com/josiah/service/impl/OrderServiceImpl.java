@@ -1,7 +1,7 @@
 package com.josiah.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.josiah.domain.Order;
+import com.josiah.domain.order.Order;
 import com.josiah.mapper.OrderMapper;
 import com.josiah.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;

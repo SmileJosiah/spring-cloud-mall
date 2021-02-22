@@ -12,6 +12,8 @@
     <modules>
         <module>spring-cloud-order</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-goods</module>
+        <module>spring-cloud-common</module>
     </modules>
     <!-- 统一管理jar包版本 -->
     <properties>
@@ -24,6 +26,8 @@
         <mysql.version>5.1.47</mysql.version>
         <druid.version>1.1.21</druid.version>
         <mybatis-plus.version>3.2.0</mybatis-plus.version>
+        <spring-cloud-common>1.0-SNAPSHOT</spring-cloud-common>
+        <hutool>5.5.8</hutool>
     </properties>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
@@ -52,6 +56,16 @@
                 <version>2.1.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.josiah</groupId>
+                <artifactId>spring-cloud-common</artifactId>
+                <version>${spring-cloud-common}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool}</version>
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>

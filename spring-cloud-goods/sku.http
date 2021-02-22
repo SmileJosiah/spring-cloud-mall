@@ -1,0 +1,7 @@
+PUT http://localhost:8081/mall-goods/sku/decStock
+Content-Type: application/json
+
+{
+"skuId": "1318594982227025922",
+  "count": 10
+}

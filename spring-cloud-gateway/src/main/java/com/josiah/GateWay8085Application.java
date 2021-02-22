@@ -16,5 +16,4 @@ public class GateWay8085Application {
     public static void main(String[] args) {
         SpringApplication.run(GateWay8085Application.class,args);
     }
-
 }

@@ -1,15 +1,15 @@
 package com.josiah.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.josiah.domain.order.Order;
+import com.josiah.domain.goods.Brand;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @title: OrderMapper
+ * @title: BrandMapper
  * @description:
  * @author: zhuxy  zhuxy@pukkasoft.cn
- * @create: 2021-02-20 17:55
+ * @create: 2021-02-22 11:14
  */
 @Mapper
-public interface OrderMapper extends BaseMapper<Order> {
+public interface BrandMapper extends BaseMapper<Brand> {
 }

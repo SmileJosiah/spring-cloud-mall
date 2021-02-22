@@ -10,7 +10,12 @@ spring:
         server-addr: 192.168.122.133
     gateway:
       routes:
-        id: baidu
-        uri: https://www.baidu.com
-
+       - id: mall-goods
+         uri: lb://mall-goods
+         predicates:
+           - Path=/mall-goods/**
+       - id: mall-order
+         uri: lb://mall-order
+         predicates:
+           - Path=/mall-order/**
 
