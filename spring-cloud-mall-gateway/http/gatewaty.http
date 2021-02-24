@@ -1,0 +1,15 @@
+
+
+###
+PUT http://localhost:8085/mall-goods/sku/decStock?id=1
+Content-Type: application/json
+userToken: name
+
+{
+  "skuId": "1318594982227025922",
+  "count": 10
+}
+###
+POST http://localhost:8085/mall-goods/upload
+
+

@@ -1,0 +1,24 @@
+dev:
+  68f7484c-5da9-4715-ac9c-8d343315dffc
+
+server:
+  port: 8085
+spring:
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.122.133
+        namespace:
+      config:
+        server-addr: 192.168.122.133
+        #配置内容的数据格式
+        file-extension: yaml
+        namespace: ${dev}
+        enabled: true
+        ext-config:
+          - data-id: redis.yaml
+
+
+

@@ -1,9 +1,0 @@
-PUT http://localhost:8085/mall-goods/sku/decStock?id=1
-Content-Type: application/json
-userToken: 1121
-
-{
-  "skuId": "1318594982227025922",
-  "count": 10
-}
-

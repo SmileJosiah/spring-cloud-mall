@@ -1,0 +1,17 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: mall-order
+  cloud:
+    nacos:
+      config:
+        ext-config:
+          - data-id: redis.yaml
+          - data-id: mall-common.yaml
+        namespace: 68f7484c-5da9-4715-ac9c-8d343315dffc
+        server-addr: 192.168.122.133
+
